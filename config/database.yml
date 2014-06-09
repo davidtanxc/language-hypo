@@ -29,6 +29,4 @@ production:
   encoding: unicode
   database: language_production
   host: localhost
-  username:  
-  password:
   pool: 5
