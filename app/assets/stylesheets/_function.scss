@@ -1,0 +1,39 @@
+@mixin rotate($deg){
+  -moz-transform: rotate($deg);
+  -webkit-transform: rotate($deg);
+  -o-transform: rotate($deg); 
+  -ms-transform:rotate($deg);
+  transform: rotate($deg);
+}
+
+@mixin rounded($size: 3px){ 
+  -moz-border-radius: $size; 
+  -o-border-radius: $size; 
+  -webkit-border-radius: $size; 
+  border-radius: $size; 
+}
+
+@mixin transition($type, $time, $timing){
+  -webkit-transition: $type $time $timing;
+  -moz-transition: $type $time $timing;
+  -ms-transition: $type $time $timing;
+  -o-transition: $type $time $timing;
+  transition: $type $time $timing;
+}
+
+@mixin shading($horl, $verl, $blur, $spread, $shade){
+  -webkit-box-shadow: $horl $verl $blur $spread $shade;
+  -moz-box-shadow: $horl $verl $blur $spread $shade;
+  box-shadow: $horl $verl $blur $spread $shade;
+}
+
+@mixin gradient2($start-color, $stop-color, $start-pos, $stop-pos){
+  background-image: -khtml-gradient(linear, left $start-pos, left $stop-pos, from($start-color), to($stop-color));
+  background-image: -moz-linear-gradient($start-pos, $start-color, $stop-color);
+  background-image: -ms-linear-gradient($start-pos, $start-color, $stop-color);
+  background-image: -webkit-gradient(linear, left $start-pos, left $stop-pos, color-stop(0%, $start-color), color-stop(100%, $stop-color));
+  background-image: -webkit-linear-gradient($start-pos, $start-color, $stop-color);
+  background-image: -o-linear-gradient($start-pos, $start-color, $stop-color);
+  background-image: linear-gradient($start-pos, $start-color, $stop-color);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$start-color', endColorstr='$stop-color', GradientType=0);
+}

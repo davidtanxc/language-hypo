@@ -1,5 +1,140 @@
-<h1>New user</h1>
+<div class="intro higher-intro">
+  <div class=" background-image blue-background"></div> 
+  <div class="container">
+    <%= image_tag("logo_big.png", :alt => 'Learnemy | Take private and group classes from people in your community', :style=> "margin: auto") %>
+    <h1>Take  classes in Singapore</h1>
+    <h2>Whether you are looking to learn for leisure or to brush up your skills, find instructors here.</h2>
 
-<%= render 'form' %>
+    <%= render 'form' %>
+  </div>
+</div>
 
-<%= link_to 'Back', users_path %>
+
+  <div class="purple-section">
+    <div class="container">
+      <div class="row-fluid" style="margin-bottom: 4px;; margin-top:24px"> 
+        <div class="span4 offset1">
+           <p style="font-size: 18px; color:white" class="text-tight"><b>Join us!</b><br> Stay updated on our best classes.</p>
+        </div>
+        <div class="span4">
+          
+        </div>
+        <div class="span1">
+        
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+<div class="how-it-works">
+  <div class="container">
+    <div class="row-fluid usp" style="margin: 20px 0">      
+      <div class="span4 ">
+        <h3><span class="circled-number">1</span> Find</h3>
+        <p>Find your perfect  instructors and classes in Singapore.</p>
+      </div>
+
+      <div class="span4 ">
+        <h3><span class="circled-number">2</span> Book</h3>
+        <p>Make payment online to secure your spot for the  classes.</p>
+      </div>
+
+      <div class="span4 ">
+        <h3><span class="circled-number">3</span> Learn</h3>
+        <p>That's all! Now you're on your way to picking up that new skill. </p>
+      </div> 
+      <p><%= link_to "Teach See how Learnemy helps you", "", class: "pull-right smaller "%></p>  
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <p class="center" style="margin-top: 0px;;margin-bottom:0px; font-size:16px;color: #7e7e7e">Featured on</p>
+  <%= image_tag("pr_bar.png", style: "margin-bottom: 128px; width: 100%;") %> 
+
+  <div class="row-fluid" style="margin-bottom: 80px; margin-top: 70px">
+  <div class="span8 offset2">
+    <h3 class="section">Verified Instructors, No Hidden Charge</h3>
+    <div class="row-fluid">
+      <div class="span3">
+        <%= image_tag("verified-ribbon.png", :alt => 'Learnemy | Take private and group classes from people in your community', style: "width: 92%; float: right;") %>
+      </div>
+      <div class="span9">
+        <p style="font-size: 18px">Learnemy has served more than <b>700</b> happy learners. We screen our instructors and we're are not afraid to reject teachers who don't meet our standards! Reviews are all made by past learners.</p>
+        <p style="font-size: 18px">There are no hidden fees in using Learnemy. Instructors pay us a small introduction fee when you enrol.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+    <footer>
+    <div class="container">
+      <div class="row-fluid">
+
+        <div class="span4">
+          <ul class="nav nav-list">
+            <li class="nav-header"><h5>Get started</h5></li>
+            <li><a href="https://www.learnemy.com/about">About</a></li>
+            <li><a href="https://www.learnemy.com/how-it-works">How it works</a></li>
+            <li><a href="https://www.learnemy.com/faq">FAQ</a></li>
+            <li><a href="https://www.learnemy.com/terms" rel="nofollow">Terms &amp; Privacy</a></li>
+          </ul>
+        </div>
+
+        <div class="span4">
+          <ul class="nav nav-list">
+            <li class="nav-header"><h5>Company</h5></li>
+            <li><a href="http://www.blog.learnemy.com/" target="_blank">Blog</a></li>
+            <li><a href="https://www.learnemy.com/press">Press</a></li>
+            <li><a href="https://www.learnemy.com/partners" rel="nofollow">Partners</a><li>
+            <li><a href="https://www.learnemy.com/contact" rel="nofollow">Contact details</a></li>
+          </ul>
+        </div>
+
+        <div class="span4">
+          <address>
+            <div itemscope itemtype="http://schema.org/LocalBusiness">
+              <div itemprop="name"><h5>LEARNEMY PTE LTD</h5></div>
+              UEN 201025618H<br/>
+              <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                <span itemprop="streetAddress">2 Orchard Link #04-01</span><br>
+                <span itemprop="addressLocality">Singapore</span> <span itemprop="postalCode">237978</span><br>
+              </div>
+              Phone: +65 8481 8408<br/>
+            </div>
+          
+          <div class="row-fluid social-icons">
+            <div class="span4">
+              <a href="http://www.facebook.com/learnemy" rel="nofollow" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                </span>
+</a>            </div>
+            <div class="span4">
+              <a href="http://www.twitter.com/learnemy" rel="nofollow" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+</a>            </div>
+            <div class="span4">
+              <a href="http://www.blog.learnemy.com/" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                </span>
+</a>            </div>
+          </div>
+          </address>
+          
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
