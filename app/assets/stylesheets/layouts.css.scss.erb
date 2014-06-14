@@ -1959,6 +1959,21 @@ ol.rounded-list {
   }  
 }
 
+.orange {
+  width: 100%;
+  background-color: $orange;
+  color: white;
+  @include rounded(4px);
+  border-color: $orange;
+  padding: 12px;
+  margin-top: 12px;
+  font-size: 18px;
+  &:hover {
+    background-color: lighten($orange, 3%)
+  }
+
+}
+
 
 
 .sign-up {
@@ -1966,4 +1981,8 @@ ol.rounded-list {
   padding: 20px;
   @include rounded(4px);
   color: white;
+}
+
+form {
+margin: 0px;
 }
