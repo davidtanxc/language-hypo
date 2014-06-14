@@ -9,6 +9,9 @@ gem 'rails_12factor', group: :production
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
+gem 'simple_form'
+ gem "better_errors"
+ gem "binding_of_caller"
 gem 'bootstrap-sass', "2.3.2.2"
 
 # Use Uglifier as compressor for JavaScript assets

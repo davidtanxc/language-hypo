@@ -17,6 +17,12 @@ body {
   /* The html and body elements cannot have any padding or margin. */
 }
 
+.collection_check_boxes {
+  margin-left: 20px;
+margin-top: -18px;
+
+}
+
 #facebook {
 overflow: hidden;
 width: 810px;
@@ -1658,7 +1664,7 @@ ol.rounded-list {
 }
 
 .intro {
-  height: 400px;
+  height: 460px;
   margin-top: -40px;
   padding-top: 100px;
   position: relative;
@@ -1701,10 +1707,10 @@ ol.rounded-list {
     line-height: 1.25;
   }
   h1 {
-    text-align: center;
-    font-size: 48px;
+    text-align: left;
+    font-size: 32px;
     font-weight: 200;
-    line-height: 1.25; 
+    line-height: 1.25;
   }
   .hero {
     position: relative;
@@ -1907,11 +1913,10 @@ ol.rounded-list {
     display: block;
   }
   h2 {
-    width: 640px;
     display:block;
     margin: auto;
     font-size: 26px;
-    text-align: center;
+    text-align: left;
   }
 }
 
@@ -1955,59 +1960,11 @@ ol.rounded-list {
   }  
 }
 
-#faq {
-  margin: 0 0 30px 0;
-  ul {
-    list-style-type: none;
-    margin: 0;
-    li h4 {
-    margin-top: 10px;
-    }
-  }
-}
 
-#faq ul li ol li {
-  list-style-type: circle;
-  margin-left: 10px;
-  text-transform: none;
-  color: #4c4c4c; 
-  div p {
-    &:last-child {margin-bottom: 40px}
-  }
- }
 
-#faq ul li ol li p#q {
-    font-weight: 500; 
-    margin-top: 10px;
-    margin-bottom: 10px;
-    &:hover {
-      text-decoration: underline;
-      cursor: pointer;}
-
-}
-
-#faq ul li ol li > div ol li, #faq ul li ol li > div ul li {
-  margin: 1em 0 0 20px;
-  line-height: 1.3em; }
-
-#faq ul li ol li > div ol li {
-  list-style-type: decimal; }
-
-#faq ul li ol li > div ul li {
-  list-style-type: circle; }
-
-.biggertext p {
-  font-size: 18px;
-}
-
-table.pending-convo {
-  td:nth-of-type(1){ width:20%; } 
-  td:nth-of-type(2){ width:70%; } 
-  td:nth-of-type(3){ width:10%; } 
-}
-
-.profile-big-ribbon {
-  border-bottom-left-radius: 8px; 
-  border-top-left-radius: 8px;
-  font-size: 18px;
+.sign-up {
+  background-color: $purple;
+  padding: 20px;
+  @include rounded(4px);
+  color: white;
 }
