@@ -13,6 +13,7 @@ gem 'simple_form'
  gem "better_errors"
  gem "binding_of_caller"
 gem 'bootstrap-sass', "2.3.2.2"
+gem "paperclip", "~> 4.1"
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
