@@ -16,6 +16,11 @@
   <%= f.input :email, label: "Email Address", input_html: { class: 'span12' }  %>
   <%= f.input :phone_number, input_html: { class: 'span12' }  %>
 
+  <% if request.path == "/" %>
+    <%= f.input :topics, :as => :hidden, :input_html => { :value => "Tennis" } %>
+  <% end %>
+  
+<!-- 
   <div class="row-fluid">
     <div class="span6">
       <span><input id="user_topics_tennis" name="user[topics][]" type="checkbox" value="Tennis" /><label class="collection_check_boxes" for="user_topics_tennis">Tennis</label></span>
@@ -26,7 +31,7 @@
       <span><input id="user_topics_bowling" name="user[topics][]" type="checkbox" value="Bowling" /><label class="collection_check_boxes" for="user_topics_bowling">Bowling</label></span>
       <input name="user[topics][]" type="hidden" value="" />
     </div>
-  </div>
+  </div> -->
   <%#= f.collection_check_boxes :class_types, @user.type_selectors, :last, :last, input_html: { class: 'checkbox-inline' }%>
   <%#= f.collection_check_boxes :topics, @user.topic_selectors, :last, :last %>
   
