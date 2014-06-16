@@ -16,22 +16,21 @@
 </div>
 
 <div class="container">
-  <p class="center" style="margin-top: 0px;;margin-bottom:0px; font-size:16px;color: #7e7e7e">Featured on</p>
-  <%= image_tag("pr_bar.png", style: "width: 100%;") %> 
-  <blockquote style="margin: 20px 0px; padding: 0">
-    <p style="font-size: 18px">Rae is a very patient and good instructor. I am soon looking forward to get another session from him.</p>
-    <small class="pull-right">Aniket Shirodkar</small>
-  </blockquote>
-  <div class="clear-both"></div>
-  <blockquote style="margin: 20px 0px; padding: 0">
-    <p style="font-size: 18px">The class is awesome! My instructor, Subh, is very knowledgable and very passionate in teaching everyone. The slide and instruction is very clear and I am able to follow. Overall it was great! Thanks Learnemy and Subh!</p>
-    <small class="pull-right">Delta Widyangga</small>
-  </blockquote>
-  <div class="clear-both"></div>
-  <blockquote style="margin: 20px 0px; padding: 0">
-    <p style="font-size: 18px">My instructor, Marcus Khoe, is great! He's been most patient and encouraging. I'm looking forward to my second lesson and I'll be continuing with him for sure.</p>
-    <small class="pull-right">Joyce Ang</small>
-  </blockquote>
+  <p class="center" style="margin-top: 32px;;margin-bottom:0px; font-size:16px;color: #7e7e7e">Featured on</p>
+  <%= image_tag("pr_bar.png", style: "width: 100%; margin-bottom: 32px") %> 
+
+   <h3 class="section" style="margin: 32px 0">See what our learners say</h3>
+  <div class="row-fluid">
+
+    <% @instructors.each do |i| %>
+      <div class="span3 instructor">
+        <%= image_tag i.avatar.url(:medium), class: "big_picture" %>
+        <%#= image_tag i.second_avatar.url(:medium), class: "small_picture"%>
+        <p class="title"><%= i.name %></p>
+        <p class="subtitle"><%= i.topic %></p>
+      </div>
+    <% end %>
+  </div>  
   <div class="clear-both" style="margin-bottom: 40px"></div>
 </div>
 
@@ -39,7 +38,7 @@
 
 <div class="how-it-works">
   <div class="container">
-    <div class="row-fluid usp" style="margin: 20px 0">      
+    <div class="row-fluid usp" style="margin: 40px 0">      
       <div class="span4 ">
         <h3><span class="circled-number">1</span> Find</h3>
         <p>Find your perfect instructors and classes in Singapore.</p>
@@ -56,23 +55,19 @@
       </div> 
       <p><%= link_to "Teach See how Learnemy helps you", "https://www.learnemy.com/teach", class: "pull-right smaller "%></p>  
     </div>
+
+    <h3 class="section space-top-none" style="text-align:center">Join a class</h3>
+    <p class="center space-top-none bigger-text" style="color: #444">Learn with others in your community with these group classes</p> 
+    <div class="row-fluid" style="margin-bottom: 80px;">
+      <div class="span6 offset3 sign-up">
+        <%= render 'form' %>
+      </div> 
+    </div>
   </div>
 </div>
 
 <div class="container">
-  <div class="row-fluid">
-    <% @instructors.each do |i| %>
-      <div class="span3 instructor">
-        <%= image_tag i.avatar.url(:medium), class: "big_picture" %>
-        <%= image_tag i.second_avatar.url(:medium), class: "small_picture"%>
-        <p class="title"><%= i.name %></p>
-        <p class="subtitle"><%= i.topic %></p>
-      </div>
-    <% end %>
-  </div>  
-
-
-  <div class="row-fluid" style="margin-bottom: 80px; margin-top: 70px">
+  <div class="row-fluid" style="margin-bottom: 80px; margin-top: 40px">
     <div class="span8 offset2">
       <h3 class="section">Verified Instructors, No Hidden Charge</h3>
       <div class="row-fluid">
@@ -84,13 +79,6 @@
           <p style="font-size: 18px">There are no hidden fees in using Learnemy. Instructors pay us a small introduction fee when you enrol.</p>
         </div>
       </div>
-    </div> 
-  </div>
-  <h3 class="section space-top-none">Join a class</h3>
-    <p class="center space-top-none bigger-text" style="color: #444">Learn with others in your community with these group classes</p> 
-  <div class="row-fluid" style="margin-bottom: 80px;">
-    <div class="span6 offset3 sign-up">
-      <%= render 'form' %>
     </div> 
   </div>
 </div>
