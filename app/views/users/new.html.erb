@@ -20,19 +20,32 @@
   <%= image_tag("pr_bar.png", style: "width: 100%; margin-bottom: 32px") %> 
 
    <h3 class="section" style="margin: 32px 0">More than 700 Happy Learners</h3>
-  <div class="row-fluid">
-
-    <% @instructors.each do |i| %>
+    <div class="row-fluid">
       <div class="span3 instructor">
-        <%= image_tag(i.avatar.url(:medium), class: "big_picture") %>
-        <%#= image_tag i.second_avatar.url(:medium), class: "small_picture"%>
-        <p class="title"><%= i.name %></p>
-        <p class="subtitle"><%= i.topic %></p>
+        <%= image_tag("1.jpeg", :alt => 'Learnemy | Take private and group classes from people in your community', :class => "big_picture") %>
+
+
+        <p class="subtitle">&quot;Responsible, energetic coach with good technique. Patient and encouraging.&quot; - Hak Chng</p>
       </div>
-    <% end %>
+      <div class="span3 instructor">
+        <%= image_tag("2.jpeg", :alt => 'Learnemy | Take private and group classes from people in your community', :class => "big_picture") %>
+        <!-- <p class="title">Marcus Khoe</p> -->
+        <p class="subtitle">&quot;My instructor, Marcus Khoe, is great! He&#39;s been most patient and encouraging. I&#39;m looking forward to my second lesson and I&#39;ll be continuing with him for sure.&quot; - Joyce Ang</p>
+      </div>
+      <div class="span3 instructor">
+        <%= image_tag("3.jpeg", :alt => 'Learnemy | Take private and group classes from people in your community', :class => "big_picture") %>
+        <!-- <p class="title">Marcus Khoe</p> -->
+        <p class="subtitle">&quot;The class is awesome! My instructor, Subh, is very knowledgable and very passionate in teaching everyone. The slide and instruction is very clear and I am able to follow. Overall it was great! Thanks Learnemy and Subh!&quot; - Diane Widyangga</p>
+      </div>
+      <div class="span3 instructor">
+        <%= image_tag("4.jpeg", :alt => 'Learnemy | Take private and group classes from people in your community', :class => "big_picture") %>
+        <!-- <p class="title">Marcus Khoe</p> -->
+        <p class="subtitle">&quot;Rae is a very patient and good instructor. I am soon looking forward to get another session from him.&quot; - Aniket Shirodkar</p>
+      </div>
   </div>  
   <div class="clear-both" style="margin-bottom: 40px"></div>
 </div>
+
 
 
 
