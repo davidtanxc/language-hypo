@@ -16,7 +16,7 @@ class UsersController < ApplicationController
   end
 
   # GET /users/new
-  def new
+  def chinese
     @user = User.new
     @instructors = Instructor.all
   end
