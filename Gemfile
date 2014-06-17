@@ -14,6 +14,8 @@ gem 'simple_form'
  gem "binding_of_caller"
 gem 'bootstrap-sass', "2.3.2.2"
 gem "paperclip", "~> 4.1"
+gem 'momentjs-rails', '~> 2.5.0'
+gem 'bootstrap3-datetimepicker-rails', '~> 3.0.0.1'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'

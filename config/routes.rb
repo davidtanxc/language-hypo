@@ -2,6 +2,7 @@ LanguageHypothesis::Application.routes.draw do
   resources :instructors
 
   resources :users
+  resources :orders
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -9,6 +10,8 @@ LanguageHypothesis::Application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'users#new'
   get 'thankyou'           => "users#thankyou"
+  get 'payment'           => "orders#new"
+  get 'soldout'           => "orders#sorry"
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

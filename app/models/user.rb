@@ -1,4 +1,5 @@
 class User < ActiveRecord::Base
+  validates :full_name, :email, :phone_number, :topic, presence: true
 
   # TOPICS = ["Tennis", "Squash", "Table Tennis", "Badminton", "Bowling" ]
   # CLASSTYPES = ["Private", "Group" ]
