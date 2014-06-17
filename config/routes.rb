@@ -13,6 +13,11 @@ LanguageHypothesis::Application.routes.draw do
   get 'payment'           => "orders#new"
   get 'soldout'           => "orders#sorry"
 
+  get 'learn-chinese-in-singapore'            => "users#chinese"
+  get 'learn-korean-in-singapore'             => "users#korean"
+  get 'english-course-in-singapore'           => "users#english"
+  get 'learn-french-in-singapore'             => "users#french"
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

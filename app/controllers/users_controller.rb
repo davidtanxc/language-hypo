@@ -21,6 +21,21 @@ class UsersController < ApplicationController
     @instructors = Instructor.all
   end
 
+  def english
+    @user = User.new
+    @instructors = Instructor.all
+  end
+
+  def french
+    @user = User.new
+    @instructors = Instructor.all
+  end
+
+  def korean
+    @user = User.new
+    @instructors = Instructor.all
+  end
+
   # GET /users/1/edit
   def edit
   end
