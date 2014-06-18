@@ -19,21 +19,29 @@ class UsersController < ApplicationController
   def chinese
     @user = User.new
     @instructors = Instructor.all
+    @title = "Learnemy - Skills marketplace in Singapore"
+    @metades = "Learnemy is an online community where you can learn skills from your peers. Take private or group classes from local experts."
   end
 
   def english
     @user = User.new
     @instructors = Instructor.all
+    @title = "Learnemy - Skills marketplace in Singapore"
+    @metades = "Learnemy is an online community where you can learn skills from your peers. Take private or group classes from local experts."
   end
 
   def french
     @user = User.new
     @instructors = Instructor.all
+    @title = "Learnemy - Skills marketplace in Singapore"
+    @metades = "Learnemy is an online community where you can learn skills from your peers. Take private or group classes from local experts."
   end
 
   def korean
     @user = User.new
     @instructors = Instructor.all
+    @title = "Learnemy - Skills marketplace in Singapore"
+    @metades = "Learnemy is an online community where you can learn skills from your peers. Take private or group classes from local experts."
   end
 
   # GET /users/1/edit
