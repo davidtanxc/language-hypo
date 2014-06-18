@@ -16,15 +16,15 @@
   <%= f.input :phone_number, input_html: { class: 'span12' }  %>
 
   <% if request.path == "/learn-chinese-in-singapore" %>
-    <%= f.input :topics, :as => :hidden, :input_html => { :value => "Chinese" } %>
+    <%= f.input :topic, :as => :hidden, :input_html => { :value => "Chinese" } %>
   <% elsif request.path == "/english-course-in-singapore" %>
-    <%= f.input :topics, :as => :hidden, :input_html => { :value => "English" } %>
+    <%= f.input :topic, :as => :hidden, :input_html => { :value => "English" } %>
   <% elsif request.path == "/learn-korean-in-singapore" %>
-    <%= f.input :topics, :as => :hidden, :input_html => { :value => "Korean" } %>
+    <%= f.input :topic, :as => :hidden, :input_html => { :value => "Korean" } %>
   <% elsif request.path == "/learn-french-in-singapore" %>
-    <%= f.input :topics, :as => :hidden, :input_html => { :value => "French" } %>
+    <%= f.input :topic, :as => :hidden, :input_html => { :value => "French" } %>
   <% else %>
-    <%= f.input :topics, :as => :hidden, :input_html => { :value => "Chinese" } %>
+    <%= f.input :topic, :as => :hidden, :input_html => { :value => "Chinese" } %>
   <% end %>
   
 <!-- 
