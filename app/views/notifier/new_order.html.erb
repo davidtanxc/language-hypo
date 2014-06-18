@@ -11,8 +11,9 @@
       <p><%= @order.number %></p>
       <p><%= @order.address %></p>
       <p><%= @order.class_type %></p>
-      <p><%= @order.start_date %></p>
-      <p><%= @order.start_time %></p>
+      <p>Start Date: <%= @order.start_date %></p>
+      <p>Start Time: <%= @order.start_time %></p>
+      <p><%= @order.created_at.try(:strftime, '%e %b %y %H:%M')  %></p>
     </table>
   </body>
 </html>

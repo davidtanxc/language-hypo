@@ -9,6 +9,7 @@
       <p><%= @user.full_name %></p>
       <p><%= @user.email %></p>
       <p><%= @user.phone_number %></p>
+      <p><%= @user.created_at.try(:strftime, '%e %b %y %H:%M')  %></p>
     </table>
   </body>
 </html>
