@@ -19,29 +19,29 @@ class UsersController < ApplicationController
   def chinese
     @user = User.new
     @instructors = Instructor.all
-    @title = "Learnemy - Skills marketplace in Singapore"
-    @metades = "Learnemy is an online community where you can learn skills from your peers. Take private or group classes from local experts."
+    @title = "Learn Chinese in Singapore | Learnemy"
+    @metades = "Learn Mandarin in Singapore with classes by Learnemy. Just tell us what you want to learn and we'll tell you where to learn Chinese in Singapore."
   end
 
   def english
     @user = User.new
     @instructors = Instructor.all
-    @title = "Learnemy - Skills marketplace in Singapore"
-    @metades = "Learnemy is an online community where you can learn skills from your peers. Take private or group classes from local experts."
+    @title = "English Course in Singapore | Learnemy"
+    @metades = "Find the best English course in Singapore on Learnemy. Just tell us what you want to learn and we'll match you with the best English instructor"
   end
 
   def french
     @user = User.new
     @instructors = Instructor.all
-    @title = "Learnemy - Skills marketplace in Singapore"
-    @metades = "Learnemy is an online community where you can learn skills from your peers. Take private or group classes from local experts."
+    @title = "Learn French in Singapore | Learnemy"
+    @metades = "Want to start learning French in Singapore? Just tell us what you want to learn and we'll tell you where to learn french in Singapore"
   end
 
   def korean
     @user = User.new
     @instructors = Instructor.all
-    @title = "Learnemy - Skills marketplace in Singapore"
-    @metades = "Learnemy is an online community where you can learn skills from your peers. Take private or group classes from local experts."
+    @title = "Learn Korean in Singapore | Learnemy"
+    @metades = "Learn Korean in Singapore with classes by Learnemy. Just tell us what you want to learn and we'll tell you where to learn Korean in Singapore"
   end
 
   # GET /users/1/edit
